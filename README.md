@@ -72,33 +72,30 @@
 
 ### Part 3a: What the Invariant Means
 
-> Two bullets: one for finalized nodes, one for non-finalized nodes.
-> Do not copy the invariant text from the spec.
-
 - **For nodes already finalized (in S):**
-  _Your answer here._
+  Their stored distance is locked in as the minimum possible cost from the source.
 
 - **For nodes not yet finalized (not in S):**
-  _Your answer here._
+  Their stored distance is the best route found so far using only finalized nodes as intermediate stops.
 
 ### Part 3b: Why Each Phase Holds
 
-> One to two bullets per phase. Maintenance must mention nonnegative edge weights.
-
 - **Initialization : why the invariant holds before iteration 1:**
-  _Your answer here._
+  The first node is the entrance, a source with a distance of 0 and distances of inf to all other nodes,
+  hence no other shortest path.
 
 - **Maintenance : why finalizing the min-dist node is always correct:**
-  _Your answer here._
+  All edge weights are nonnegative, so any other later paths cannot be shorter than the min-dist node. 
 
 - **Termination : what the invariant guarantees when the algorithm ends:**
-  _Your answer here._
+  Every reachable node has been finalized with its shortest path from the source. Unreachable nodes are 'inf'.
 
 ### Part 3c: Why This Matters for the Route Planner
 
 > One sentence connecting correct distances to correct routing decisions.
 
-_Your answer here._
+Correct shortest path distance ensures that the torchbearer compares relic orders using real travel costs instead
+of false costs.
 
 ---
 
