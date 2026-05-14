@@ -4,17 +4,9 @@
 **Student ID:** 132120388
 **Course:** CS 460 – Algorithms | Spring 2026
 
-> This README is your project documentation. Write it the way a developer would document
-> their design decisions , bullet points, brief justifications, and concrete examples where
-> required. You are not writing an essay. You are explaining what you built and why you built
-> it that way. Delete all blockquotes like this one before submitting.
-
 ---
 
 ## Part 1: Problem Analysis
-
-> Document why this problem is not just a shortest-path problem. Three bullet points, one
-> per question. Each bullet should be 1-2 sentences max.
 
 - **Why a single shortest-path run from S is not enough:**
   Computing only single shortest-path will not figure out which order of relic chambers
@@ -34,8 +26,6 @@
 
 ### Part 2a: Source Selection
 
-> List the source node types as a bullet list. For each, one-line reason.
-
 | Source Node Type | Why it is a source |
 |---|---|
 | Entrance | The torchbearer starts from here. |
@@ -43,8 +33,6 @@
 | Exit | The torchbearer exits here, included for completeness |
 
 ### Part 2b: Distance Storage
-
-> Fill in the table. No prose required.
 
 | Property | Your answer |
 |---|---|
@@ -55,8 +43,6 @@
 | Why O(1) lookup is possible | Python hashes keys so dictionary lookups are typically O(1) |
 
 ### Part 2c: Precomputation Complexity
-
-> State the total complexity and show the arithmetic. Two to three lines max.
 
 - **Number of Dijkstra runs:** k+2
 - **Cost per run:** O(m log n)
@@ -92,8 +78,6 @@
 
 ### Part 3c: Why This Matters for the Route Planner
 
-> One sentence connecting correct distances to correct routing decisions.
-
 Correct shortest path distance ensures that the torchbearer compares relic orders using real travel costs instead
 of false costs.
 
@@ -103,10 +87,7 @@ of false costs.
 
 ### Why Greedy Fails
 
-> State the failure mode. Then give a concrete counter-example using specific node names
-> or costs (you may use the illustration example from the spec). Three to five bullets.
-
-- **The failure mode:** _Your answer here._
+- **The failure mode:** Greedy fails because it does not consider which order of relics will be the most optimal.
 - **Counter-example setup:** _Your answer here._
 - **What greedy picks:** _Your answer here._
 - **What optimal picks:** _Your answer here._
