@@ -25,16 +25,15 @@ import heapq
 # =============================================================================
 
 def explain_problem():
-    """
-    Returns
-    -------
-    str
-        Your Part 1 README answers, written as a string.
-        Must match what you wrote in README Part 1.
+    return  """
+        
+    Computing only single shortest-path will not figure out which order of relic chambers is the most optimal.
 
-    TODO
+    What order of relic chambers to visit respective to their costs should be taken to minimize fuel costs.
+
+   Search over orders because we are finding the most optimal order of relic chambers to visit.
+
     """
-    return "TODO"
 
 
 # =============================================================================
