@@ -53,9 +53,6 @@
 
 ## Part 3: Algorithm Correctness
 
-> Document your understanding of why Dijkstra produces correct distances.
-> Bullet points and short sentences throughout. No paragraphs.
-
 ### Part 3a: What the Invariant Means
 
 - **For nodes already finalized (in S):**
@@ -88,16 +85,17 @@ of false costs.
 ### Why Greedy Fails
 
 - **The failure mode:** Greedy fails because it does not consider which order of relics will be the most optimal.
-- **Counter-example setup:** _Your answer here._
-- **What greedy picks:** _Your answer here._
-- **What optimal picks:** _Your answer here._
-- **Why greedy loses:** _Your answer here._
+Choosing a local relic may cascade into more expensive choices later.
+- **Counter-example setup:** Let's say S->A=1, S->B=2, A->B=100, A->C=100, B->C=1, C->A=1, A->T=1.
+- **What greedy picks:** Greedy starts with A because it is the cheapest locally, then B or C because there
+are no other options. Total cost is 100+.
+- **What optimal picks:** Optimal picks B, C, A, then T. Total cost is 5.
+- **Why greedy loses:** Greedy picks immediate cheapest, forsaking later better paths.
 
 ### What the Algorithm Must Explore
 
-> One bullet. Must use the word "order."
-
-- _Your answer here._
+- The algorithm must explore all possible path combinations such that the order of relics chosen is its
+minimzal cost.
 
 ---
 
