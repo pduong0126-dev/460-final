@@ -15,9 +15,11 @@
 > Required. Write this before writing any code. Describe your plan: what you will
 > implement first, what parts you expect to be difficult, and how you plan to test.
 
-_ Format the entrance, exit, and relic chambers as important nodes. At each important node, run 
+- Format the entrance, exit, and relic chambers as important nodes. At each important node, run 
 Dijkstra's to find shortest-paths to all other nodes, retain only the distances found between
-two important nodes, then visiting each relic chamber exactly once before finishing at the exit.
+two important nodes, then visiting each relic chamber exactly once before finishing at the exit. 
+
+- DP is required to find optimal path and avoid recomputing with Dijsktra's redundantly 
 
 ---
 
