@@ -16,7 +16,7 @@ will not be able to do this.
 
 ---
 
-## Entry 2 – [05/14/2026 - 2:40 PM]: [Short description]
+## Entry 2 – [05/14/2026 - 2:00-4:00 PM]: Parts 1-6 & Errors
 
 > Required. At least one entry must describe a bug, wrong assumption, or design change
 > you encountered. Describe what went wrong and how you resolved it.
@@ -28,13 +28,13 @@ I searched it up, found out it's because I have none/nil variables returned from
 
 ---
 
-## Entry 3 – [Date]: [Short description]
+## Entry 3 – [05/14/2026 - 6:00-9:00 PM]: Code Implementation
 
 _Your entry here._
 
 ---
 
-## Entry 4 – [Date]: Post-Implementation Reflection
+## Entry 4 – [05/14/2026 - 9:00 PM]: Post-Implementation Reflection
 
 > Required. Written after your implementation is complete. Describe what you would
 > change or improve given more time.
@@ -43,9 +43,7 @@ _Your entry here._
 
 ---
 
-## Final Entry – [Date]: Time Estimate
-
-> Required. Estimate minutes spent per part. Honesty is expected; accuracy is not graded.
+## Final Entry – [05/14/2026 - 11:59 PM]: Time Estimate
 
 | Part | Estimated Hours |
 |---|---|
