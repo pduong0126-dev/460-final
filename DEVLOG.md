@@ -3,17 +3,9 @@
 **Student Name:** Phu Duong
 **Student ID:** 132120388
 
-> Instructions: Write at least four dated entries. Required entry types are marked below.
-> Two to five sentences per entry is sufficient. Write entries as you go, not all in one
-> sitting. Graders check that entries reflect genuine work across multiple sessions.
-> Delete all blockquotes before submitting.
-
 ---
 
 ## Entry 1 – [05/14/2026 - 2:00 PM]: Initial Plan
-
-> Required. Write this before writing any code. Describe your plan: what you will
-> implement first, what parts you expect to be difficult, and how you plan to test.
 
 - Format the entrance, exit, and relic chambers as important nodes. At each important node, run 
 Dijkstra's to find shortest-paths to all other nodes, retain only the distances found between
