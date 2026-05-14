@@ -38,8 +38,9 @@
 
 | Source Node Type | Why it is a source |
 |---|---|
-| _node type_ | _one-line reason_ |
-| _node type_ | _one-line reason_ |
+| Entrance | The torchbearer starts from here. |
+| Relic Chambers | After reaching a relic, the current chamber is the source for the next chamber/exit. |
+| Exit | The torchbearer exits here, included for completeness |
 
 ### Part 2b: Distance Storage
 
@@ -47,11 +48,11 @@
 
 | Property | Your answer |
 |---|---|
-| Data structure name | |
-| What the keys represent | |
-| What the values represent | |
-| Lookup time complexity | |
-| Why O(1) lookup is possible | |
+| Data structure name | Nested dictionary |
+| What the keys represent | Outer key is source node, inner key is destination node |
+| What the values represent | Cheapest path from source to destination |
+| Lookup time complexity | O(1) |
+| Why O(1) lookup is possible | Python hashes keys so dictionary lookups are typically O(1) |
 
 ### Part 2c: Precomputation Complexity
 
