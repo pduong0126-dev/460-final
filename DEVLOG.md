@@ -17,9 +17,10 @@
 
 - Format the entrance, exit, and relic chambers as important nodes. At each important node, run 
 Dijkstra's to find shortest-paths to all other nodes, retain only the distances found between
-two important nodes, then visiting each relic chamber exactly once before finishing at the exit. 
-
-- DP is required to find optimal path and avoid recomputing with Dijsktra's redundantly 
+two important nodes, then visiting each relic chamber exactly once before finishing at the exit.
+DP is required to find optimal path and avoid recomputing with Dijsktra's redundantly and so
+that it can decide the most optimal order of relic chambers to visit. A single shortest-path
+will not be able to do this. 
 
 ---
 
@@ -53,7 +54,7 @@ _Your entry here._
 
 | Part | Estimated Hours |
 |---|---|
-| Part 1: Problem Analysis | |
+| Part 1: Problem Analysis | 30 minutes |
 | Part 2: Precomputation Design | |
 | Part 3: Algorithm Correctness | |
 | Part 4: Search Design | |
