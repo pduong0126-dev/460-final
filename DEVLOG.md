@@ -24,12 +24,15 @@ will not be able to do this.
 
 ---
 
-## Entry 2 – [Date]: [Short description]
+## Entry 2 – [05/14/2026 - 2:40 PM]: [Short description]
 
 > Required. At least one entry must describe a bug, wrong assumption, or design change
 > you encountered. Describe what went wrong and how you resolved it.
 
 _Your entry here._
+
+The very first time I pressed run module, despite making no code changes, I got the error "TypeError: cannot unpack non-iterable NoneType object".
+I searched it up, found out it's because I have none/nil variables returned from the solve() function. I 
 
 ---
 
