@@ -2,8 +2,8 @@
 CS 460 – Algorithms: Final Programming Assignment
 The Torchbearer
 
-Student Name: ___________________________
-Student ID:   ___________________________
+Student Name: Phu Duong
+Student ID:   132120388
 
 INSTRUCTIONS
 ------------
@@ -102,16 +102,21 @@ def precompute_distances(graph, spawn, relics, exit_node):
 # =============================================================================
 
 def dijkstra_invariant_check():
-    """
-    Returns
-    -------
-    str
-        Your Part 3 README answers, written as a string.
-        Must match what you wrote in README Part 3.
+   return  """
+        
+    For nodes already finalized (in S), their stored distance is locked in as the minimum possible cost from the source.
 
-    TODO
+    For nodes not yet finalized (not in S), their stored distance is the best route found so far using only finalized nodes as intermediate stops.
+
+    The invariant holds before initialization because the first node is the entrance, a source with a distance of 0 and distances of inf to all other nodes, hence no other shortest path.
+
+    Finalizing the min-dist node is always correct because all edge weights are nonnegative, so any other later paths cannot be shorter than the min-dist node.
+
+    When the algorithm ends, the invariant guarantees that every reachable node has been finalized with its shortest path from the source. Unreachable nodes are 'inf'.
+
+    Correct shortest path distance ensures that the torchbearer compares relic orders using real travel costs instead of false costs.
+
     """
-    return "TODO"
 
 
 # =============================================================================
