@@ -130,30 +130,23 @@ minimzal cost.
 
 ### Part 6a: Best-So-Far Tracking
 
-> Three bullets.
-
-- **What is tracked:** _Your answer here._
-- **When it is used:** _Your answer here._
-- **What it allows the algorithm to skip:** _Your answer here._
+- **What is tracked:** The best/cheapest route and its relic order computed so far
+- **When it is used:** Before expanding new recursive branches in explore()
+- **What it allows the algorithm to skip:** Routes that already have greater costs than the cheapest
 
 ### Part 6b: Lower Bound Estimation
 
-> Three bullets.
-
-- **What information is available at the current state:** _Your answer here._
-- **What the lower bound accounts for:** _Your answer here._
-- **Why it never overestimates:** _Your answer here._
+- **What information is available at the current state:** Current location, relics remaining, relics visited order, cost so far, and the best/cheapest route so far
+- **What the lower bound accounts for:** The cost so far
+- **Why it never overestimates:** All edge weights are nonnegative, therefore final cost cannot be less than the cost so far
 
 ### Part 6c: Pruning Correctness
 
-> One to two bullets. Explain why pruning is safe.
-
-- _Your answer here._
+- A recursive branch is pruned when it is not a potential best route.
+- Furthermore, nonnegative weights ensures that even if we continue the branch, it cannot get any lower than the best route so far.
 
 ---
 
 ## References
 
-> Bullet list. If none beyond lecture notes, write that.
-
-- _Your references here._
+- 
